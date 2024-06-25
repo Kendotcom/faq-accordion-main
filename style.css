@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-pink: hsl(275, 100%, 97%);
+  --Grayish-purple: hsl(292, 16%, 49%);
+  --Dark-purple: hsl(292, 42%, 14%);
+}
+
+.wrapper {
+  background-color: var(--Grayish-purple);
+}
+
+.faq-card {
+  position: fixed;
+  background-color: var(--Light-pink);
+  width: 500px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+.faq-card header {
+  display: flex;
+  gap: 10px;
+}
+
+.faq-card .dropdown {
+}
