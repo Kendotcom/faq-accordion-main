@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600,700");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Work Sans", sans-serif;
 }
 
 :root {
@@ -17,6 +20,9 @@
 
 .faq-card {
   position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: var(--Light-pink);
   width: 500px;
   padding: 20px;
@@ -31,4 +37,30 @@
 }
 
 .faq-card .dropdown {
+  border-bottom: 0.5px solid var(--Grayish-purple);
+  padding: 15px 0;
+}
+
+.faq-card .dropdown:last-of-type {
+  border-bottom: none;
+}
+
+.faq-card .dropdown .column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column span {
+  font-weight: 600;
+}
+
+.faq-card .dropdown-data {
+  display: none;
+}
+
+.faq-card .dropdown-data.show {
+  display: block;
+  padding: 15px 0 0 0;
+  color: var(--Grayish-purple);
 }
